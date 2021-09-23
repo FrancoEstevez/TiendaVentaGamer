@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+	<link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
+	<meta name="description" content="Aqui puedes comprar unos aubriculares">
+	<meta name="keywords"  content="aubriculares, venta">
+	<title>Gamer store</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__links">
+			<a class="header__botones" href="../index.html">inicio</a>
+			<a class="header__botones" href="./sucursales.html">sucursales</a>
+		</div>
+		<div class="header__searchContainer">
+			<input class="header__searchBox" type="text">
+		</div>
+		<div class="header__logInContainer">
+							<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			log in
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">log in</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="" method="">
+						Ingrese su nombre   <input type="text">
+						<br>
+						Ingrese su email  <input type="email">
+						<br>
+						ingrese su contraseña   <input type="password">
+						<br>
+						<p class="loginselecciona">selecciona su genero</p>
+						<Select name="" id="">
+							<option value="1">Femenino</option>
+							<option value="2">Masculino</option>
+						</Select>
+						<br>
+						Dejanos un comentario
+						<br>
+						<textarea name="" id="" cols="40" rows="5">
+						</textarea>
+						<br>
+						<input type="submit" value="Enviar">
+						<Input type="reset"> 
+						<br>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</header>
+	<ul class="nav justify-content-center">
+		<li class="nav-item">
+		  <a class="nav-link" aria-current="page" href="./mouse.html">MOUSE</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="./teclado.html">TECLADO</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="./microfono.html">MICROFONO</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="./aubriculares.html">AURICULARES</a>
+		</li>
+	  </ul>
+	<main class="body__buyCard">
+		<div class="mainButton">
+			<h2 class="mainButton__titulo">Hyperx Cloud Flight</h2>
+			<img class="mainButton__foto" src="https://www.cnet.com/a/img/E8_Tx_-8RObuoAdthamip0KObzY=/940x0/2018/01/31/21309990-5d16-48d2-9f6e-e0aef1f4922b/hyperx-cloud-flight-8.jpg" alt="Alloy fps">
+			<h3 class="precio">18.000$</h3>
+			<button class="mainButton__comprar">
+				comprar
+			</button>
+		</div>
+		<div class="mainButton">
+			<h2 class="mainButton__titulo">Hyperx Cloud II</h2>
+			<img class="mainButton__foto" src="https://i.ytimg.com/vi/TbmXaItIYno/maxresdefault.jpg" alt="Alloy fps">
+			<h3 class="precio">10.000$</h3>
+			<button class="mainButton__comprar">
+				comprar
+			</button>
+		</div>
+	</main>
+	<script src="../bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

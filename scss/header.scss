@@ -1,0 +1,42 @@
+@import "colors";
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    grid-template-rows: 40px;
+    background-color: $black;
+    &__links{
+        flex: 3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__botones{
+        text-decoration: none;
+        font-family: 'Bebas Neue';
+        color: $white;
+        font-size: 20px;
+    }
+    &__searchContainer{
+        flex: 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    &__searchBox{
+        width: 50%;
+        height: 40%;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    &__logInContainer{
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

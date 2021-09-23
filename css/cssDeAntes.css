@@ -1,0 +1,59 @@
+.mainButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px gray;
+    transition: all 0.5s;
+}
+
+.loginselecciona {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+img {
+    width: 700px;
+    height: 350px;
+}
+
+/* @media only screen and (min-width:497px){
+    .grid{
+        display: grid;
+        width: 100vw;
+    }
+} */
+
+@media only screen and (min-width:850px){
+    .nombre{
+        font-size: 20px;
+    }
+    .foto{
+        height: 120px;
+    }
+    .mainButton {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .mainButton {
+        width: 30%;
+        height: 200px;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    .nombre{
+        font-size: 14px;
+    }
+    .mainButton {
+        width: 40%;
+        height: 230px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 4fr 3fr 2fr;
+    }
+    .searchBox {
+        width: 40%;
+    }
+}

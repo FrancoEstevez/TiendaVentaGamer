@@ -1,0 +1,165 @@
+.header {
+  display: grid;
+  grid-template-columns: 3fr 4fr 1fr;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  grid-template-rows: 40px;
+  background-color: black; }
+  .header__links {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .header__botones {
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    color: white;
+    font-size: 20px; }
+  .header__searchContainer {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header__searchBox {
+    width: 50%;
+    height: 40%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px; }
+  .header__logInContainer {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.nav {
+  background-color: #474747; }
+  .nav__item {
+    font-size: 17px;
+    font-family: 'Bebas Neue';
+    list-style: lower-alpha;
+    list-style-type: none; }
+  .nav-link {
+    color: white; }
+
+.mainButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 10px gray;
+  transition: all 0.5s; }
+
+.mainButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 320px;
+  background-color: white;
+  border-color: black;
+  margin: 1%;
+  color: black;
+  border-radius: 10px;
+  margin-left: 2%;
+  margin-top: 2%;
+  overflow: hidden; }
+  .mainButton__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 15px; }
+  .mainButton__foto {
+    border-radius: 4px;
+    width: 90%;
+    height: 130px; }
+  .mainButton__comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #4BC6B9;
+    font-size: 20px;
+    font-family: 'Bebas Neue'; }
+
+@media only screen and (min-width: 850px) {
+  .nombre {
+    font-size: 20px; }
+  .foto {
+    height: 120px; }
+  .mainButton {
+    height: 300px; } }
+
+@media only screen and (max-width: 850px) {
+  .mainButton {
+    width: 30%;
+    height: 250px; }
+  .header {
+    display: grid;
+    grid-template-columns: 4fr 3fr 2fr; } }
+
+@media only screen and (max-width: 400px) {
+  .nombre {
+    font-size: 14px; }
+  .mainButton {
+    width: 40%;
+    height: 230px; }
+  .header {
+    display: grid;
+    grid-template-columns: 4fr 3fr 2fr; }
+  .searchBox {
+    width: 40%; }
+  .indexCards {
+    display: flex;
+    flex-direction: column; } }
+
+.sucursales {
+  display: flex;
+  flex-direction: column; }
+  .sucursales__primero {
+    display: flex;
+    flex-direction: row;
+    background-color: #c3a98b;
+    padding: 1%;
+    width: 100%;
+    height: 30%; }
+  .sucursales__primerP {
+    color: white;
+    margin-left: 2%; }
+  .sucursales__segundo {
+    background-color: #252440;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1%;
+    width: 100%;
+    height: 30%; }
+  .sucursales__segundoP {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 2%;
+    color: white; }
+
+.indexCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ebebeb;
+  font-family: 'Bebas Neue'; }
+  .body__main {
+    display: flex;
+    flex-direction: row;
+    background-color: #ebebeb; }
+  .body__buyCard {
+    padding: none;
+    margin: none;
+    width: 100%;
+    height: 632px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ebebeb; }

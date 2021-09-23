@@ -1,0 +1,16 @@
+@import "colors";
+
+.nav{
+    background-color: $navBarGrey;
+    &__item{
+        font-size: 17px;
+        font-family: 'Bebas Neue';
+        list-style: lower-alpha;
+        list-style-type: none;
+    }
+    &-link {
+        color: $white;
+    }
+}
+
+

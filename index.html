@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+	<link rel="stylesheet" href="./bootstrap-5.1.1-dist/css/bootstrap.min.css">
+	<meta name="description" content="Compra los mejores productos gaming y para streamer.">
+	<meta name="keywords"  content="mouse, teclado, aubriculares, microfono, venta">
+	<title>Gamer store</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+		@media only screen and (min-width:850px){
+    .nombre{
+        font-size: 20px;
+    }
+    .foto{
+        height: 120px;
+    }
+    .mainButton {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .mainButton {
+        width: 30%;
+        height: 200px;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    .nombre{
+        font-size: 14px;
+    }
+    .mainButton {
+        width: 40%;
+        height: 230px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 4fr 3fr 2fr;
+    }
+    .searchBox {
+        width: 40%;
+    }
+}
+	</style>
+</head>
+<body class="body">
+
+
+	<header class="header">
+		<div class="header__links">
+			<a class="header__botones" href="./index.html">inicio</a>
+			<a class="header__botones" href="./paginas/sucursales.html">sucursales</a>
+		</div>
+		<div class="header__searchContainer">
+			<input class="header__searchBox" type="text">
+		</div>
+		<div class="header__logInContainer">
+							<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			log in
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">log in</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="" method="">
+						Ingrese su nombre   <input type="text">
+						<br>
+						Ingrese su email  <input type="email">
+						<br>
+						ingrese su contraseña   <input type="password">
+						<br>
+						<p class="loginselecciona">selecciona su genero</p>
+						<Select name="" id="">
+							<option value="1">Femenino</option>
+							<option value="2">Masculino</option>
+						</Select>
+						<br>
+						Dejanos un comentario
+						<br>
+						<textarea name="" id="" cols="40" rows="5">
+						</textarea>
+						<br>
+						<input type="submit" value="Enviar">
+						<Input type="reset"> 
+						<br>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+
+
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<ul class="nav justify-content-center">
+		<li class="nav__item">
+		  <a class="nav-link" aria-current="page" href="./paginas/mouse.html">MOUSE</a>
+		</li>
+		<li class="nav__item">
+		  <a class="nav-link" href="./paginas/teclado.html">TECLADO</a>
+		</li>
+		<li class="nav__item">
+		  <a class="nav-link" href="./paginas/microfono.html">MICROFONO</a>
+		</li>
+		<li class="nav__item">
+		  <a class="nav-link" href="./paginas/aubriculares.html">AURICULARES</a>
+		</li>
+	  </ul>
+
+
+
+	<main style="display: flex; flex-direction: column;" class="body__main">
+		<img src="https://http2.mlstatic.com/D_NQ_NP_712064-MLA41632791428_052020-OO.webp" class="d-block w-100" alt="...">
+		<div class="indexCards">
+			<div class="card" style="width: 18rem;">
+				<img src="https://mla-s1-p.mlstatic.com/878299-MLA41662414769_052020-F.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Mouse</h5>
+					<p class="card-text">Nuestra elexion de los mejores mouse gamer.</p>
+					<a href="./paginas/mouse.html" class="btn btn-primary">Toca para comprar</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="https://newesc.com/wp-content/uploads/Mejores-Teclados-Mec%C3%A1nicos.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Teclado</h5>
+					<p class="card-text">Nuestra elexion de los mejores teclados gamer.</p>
+					<a href="./paginas/teclado.html" class="btn btn-primary">Toca para comprar</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="https://http2.mlstatic.com/D_NQ_NP_733882-MLA32970710844_112019-O.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Microfono</h5>
+					<p class="card-text">Nuestra elexion de los mejores microfonos para streamer.</p>
+					<a href="./paginas/microfono.html" class="btn btn-primary">Toca para comprar</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="https://mk0soundguyshosprmrt.kinstacdn.com/wp-content/uploads/2020/10/HyperX-CLoud-II-Wireless-Chair-shot.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Aubriculares</h5>
+					<p class="card-text">Nuestra elexion de los mejores aubriculares 7.1</p>
+					<a href="./paginas/aubriculares.html" class="btn btn-primary">Toca para comprar</a>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="card mb-3" style="max-width: 540px;">
+			<div class="row g-0">
+			<div class="col-md-4">
+				<img src="https://alonsoinformatica.com.ar/wp-content/uploads/2021/04/LOGITECH-G502-HERO-2.png" class="img-fluid" alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+				<h5 class="card-title">Logitech g502</h5>
+				<p class="card-text">Cuenta con un nuevo sensor óptico, HERO, capaz de alcanzar unas resoluciones desde 100 DPI hasta 16.000 DPI, iluminación RGB personalizada y Tiene 11 botones personalizables.</p>
+				<p class="card-text"><small class="text-muted">Disponible en nuestras tiendas</small></p>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row g-0">
+			<div class="col-md-4">
+				<img src="https://www.venex.com.ar/mods/html/fil/Model/ProductGrouper/27/5b8c64d94b6f6-1429218943424-26030190-1405.jpg" class="img-fluid" alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+				<h5 class="card-title">Hyperx Alloy Origins Core</h5>
+				<p class="card-text">Es un teclado tenkeyless ultra compacto y robusto que cuenta con interruptores mecánicos diseñados para brindarles a los gamers la mejor combinación de estilo, rendimiento y confiabilidad</p>
+				<p class="card-text"><small class="text-muted">No stock</small></p>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="card mb-3" style="max-width: 540px;">
+			<div class="row g-0">
+			<div class="col-md-4">
+				<img src="https://mla-s1-p.mlstatic.com/739446-MLA44207269367_112020-F.jpg" class="img-fluid" alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+				<h5 class="card-title">Hyperx Quadcast S</h5>
+				<p class="card-text">Es el micrófono independiente todo incluido ideal para el aspirante a streamer o podcaster que busca un micrófono de condensador con sonido de calidad. El modelo QuadCast S proporciona iluminación RGB y efectos dinámicos que se pueden personalizar a través del software HyperX NGENUITY.</p>
+				<p class="card-text"><small class="text-muted">Disponible en nuestras tiendas</small></p>
+				</div>
+			</div>
+			</div>
+		</div> -->
+	</main>
+	<footer>
+
+	</footer>
+	<script src="./bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

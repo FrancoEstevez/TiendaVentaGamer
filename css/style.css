@@ -43,11 +43,6 @@
   .nav-link {
     color: white; }
 
-.mainButton:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px 10px gray;
-  transition: all 0.5s; }
-
 .mainButton {
   display: flex;
   flex-direction: column;
@@ -83,6 +78,37 @@
     font-size: 20px;
     font-family: 'Bebas Neue'; }
 
+.sucursales {
+  display: flex;
+  flex-direction: column; }
+  .sucursales__primero {
+    display: flex;
+    flex-direction: row;
+    background-color: #c3a98b;
+    padding: 1%;
+    width: 100%;
+    height: 30%; }
+  .sucursales__primerP {
+    color: white;
+    margin-left: 2%; }
+  .sucursales__segundo {
+    background-color: #252440;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1%;
+    width: 100%;
+    height: 30%; }
+  .sucursales__segundoP {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 2%;
+    color: white; }
+
+.indexCards {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row; }
+
 @media only screen and (min-width: 850px) {
   .nombre {
     font-size: 20px; }
@@ -112,38 +138,13 @@
     width: 40%; }
   .indexCards {
     display: flex;
+    flex-direction: column; }
+  .nav__item {
+    font-size: 13px; } }
+
+@media only screen and (max-width: 540px) {
+  .indexCards {
     flex-direction: column; } }
-
-.sucursales {
-  display: flex;
-  flex-direction: column; }
-  .sucursales__primero {
-    display: flex;
-    flex-direction: row;
-    background-color: #c3a98b;
-    padding: 1%;
-    width: 100%;
-    height: 30%; }
-  .sucursales__primerP {
-    color: white;
-    margin-left: 2%; }
-  .sucursales__segundo {
-    background-color: #252440;
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 1%;
-    width: 100%;
-    height: 30%; }
-  .sucursales__segundoP {
-    display: flex;
-    justify-content: flex-start;
-    margin-right: 2%;
-    color: white; }
-
-.indexCards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
 
 .body {
   margin: 0;

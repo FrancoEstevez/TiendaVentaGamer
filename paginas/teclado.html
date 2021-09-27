@@ -12,7 +12,7 @@
 	<title>Gamer store</title>
 	<link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body  class="body">
 	<header class="header">
 		<div class="header__links">
 			<a class="header__botones" href="../index.html">inicio</a>
@@ -94,9 +94,36 @@
 			<h2 class="mainButton__titulo">Nisuta NSKBGZ61</h2>
 			<img class="mainButton__foto" src="https://http2.mlstatic.com/D_NQ_NP_726342-MLA44175023420_112020-O.jpg"  alt="Alloy fps">
 			<h3 class="precio">6.000$</h3>
-			<button class="mainButton__comprar">
-				comprar
-			</button>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyModal">
+	Comprar
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">comprar</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+
+			<form action="" method="">
+				Numero de tarjeta   <input type="number">
+				<br>
+				Expira en: <input type="number">
+				<br>
+				Ingrese su email  <input type="email">
+				<br>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 		</div>
 	</main>
 	<script src="../bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>

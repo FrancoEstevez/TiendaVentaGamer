@@ -119,7 +119,7 @@
 
 @media only screen and (max-width: 850px) {
   .mainButton {
-    width: 30%;
+    width: 40%;
     height: 250px; }
   .header {
     display: grid;
@@ -129,7 +129,7 @@
   .nombre {
     font-size: 14px; }
   .mainButton {
-    width: 40%;
+    width: 100%;
     height: 230px; }
   .header {
     display: grid;
@@ -163,4 +163,6 @@
     height: 632px;
     display: flex;
     flex-direction: row;
-    background-color: #ebebeb; }
+    background-color: #ebebeb;
+    animation: bounce;
+    animation-duration: 2s; }

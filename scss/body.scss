@@ -4,6 +4,7 @@
 @import "buttons";
 @import "sucursales";
 @import "cards";
+@import "footer";
 @import "mediaq";
 
 .body {
@@ -12,21 +13,19 @@
     width: 100%;
     background-color: #ebebeb;
     font-family: 'Bebas Neue';
+    &__buyCard {
+        display: flex;
+        flex-direction: row;
+        padding: none;
+        margin: none;
+        width: 100%;
+        height: 100%;
+        background-color: #ebebeb;
+    }
     &__main{
         display: flex;
         flex-direction: row;
         background-color: #ebebeb;}
-    &__buyCard {
-        padding: none;
-        margin: none;
-        width: 100%;
-        height: 632px;
-        display: flex;
-        flex-direction: row;
-        background-color: #ebebeb;
-        animation: bounce; 
-        animation-duration: 2s;
-    }
 }
 
 

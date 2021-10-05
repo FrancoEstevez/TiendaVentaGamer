@@ -15,7 +15,7 @@
     text-decoration: none;
     font-family: 'Bebas Neue';
     color: white;
-    font-size: 20px; }
+    font-size: 1.2em; }
   .header__searchContainer {
     flex: 6;
     display: flex;
@@ -26,7 +26,7 @@
     height: 40%;
     border: none;
     border-radius: 10px;
-    font-size: 18px; }
+    font-size: 1em; }
   .header__logInContainer {
     flex: 2;
     display: flex;
@@ -34,9 +34,10 @@
     align-items: center; }
 
 .nav {
-  background-color: #474747; }
+  background-color: #474747;
+  align-items: center; }
   .nav__item {
-    font-size: 17px;
+    font-size: 1.1em;
     font-family: 'Bebas Neue';
     list-style: lower-alpha;
     list-style-type: none; }
@@ -48,7 +49,7 @@
   flex-direction: column;
   align-items: center;
   width: 20%;
-  height: 320px;
+  height: 80%;
   background-color: white;
   border-color: black;
   margin: 1%;
@@ -61,29 +62,18 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-size: 15px; }
+    font-size: 1.2em; }
   .mainButton__foto {
     border-radius: 4px;
     width: 90%;
     height: 130px; }
-  .mainButton__comprar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 50px;
-    border-radius: 15px;
-    border: none;
-    background-color: #4BC6B9;
-    font-size: 20px;
-    font-family: 'Bebas Neue'; }
 
 .sucursales {
   display: flex;
   flex-direction: column; }
   .sucursales__primero {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #c3a98b;
     padding: 1%;
     width: 100%;
@@ -91,46 +81,61 @@
   .sucursales__primerP {
     color: white;
     margin-left: 2%; }
+  .sucursales__textContainer {
+    background-color: #c3a98b; }
   .sucursales__segundo {
     background-color: #252440;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     padding: 1%;
     width: 100%;
     height: 30%; }
   .sucursales__segundoP {
-    display: flex;
-    justify-content: flex-start;
-    margin-right: 2%;
-    color: white; }
+    color: white;
+    margin-left: 2%; }
 
 .indexCards {
   display: flex;
   justify-content: space-around;
   flex-direction: row; }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin-top: 30%; }
+  footer__first {
+    display: flex;
+    flex-direction: column; }
+  footer__second {
+    display: flex;
+    flex-direction: column; }
+
 @media only screen and (min-width: 850px) {
-  .nombre {
-    font-size: 20px; }
   .foto {
     height: 120px; }
   .mainButton {
-    height: 300px; } }
+    height: 40%; } }
 
 @media only screen and (max-width: 850px) {
   .mainButton {
     width: 40%;
-    height: 250px; }
+    height: 60%; }
   .header {
     display: grid;
-    grid-template-columns: 4fr 3fr 2fr; } }
+    grid-template-columns: 4fr 3fr 2fr; }
+  .body main {
+    flex-direction: column; }
+  .body__buyCard {
+    align-items: center; } }
 
 @media only screen and (max-width: 400px) {
-  .nombre {
-    font-size: 14px; }
   .mainButton {
     width: 100%;
-    height: 230px; }
+    height: 50%; }
   .header {
     display: grid;
     grid-template-columns: 4fr 3fr 2fr; }
@@ -138,13 +143,18 @@
     width: 40%; }
   .indexCards {
     display: flex;
-    flex-direction: column; }
-  .nav__item {
-    font-size: 13px; } }
+    flex-direction: column; } }
 
 @media only screen and (max-width: 540px) {
   .indexCards {
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; }
+  .nav {
+    display: none; } }
+
+@media only screen and (min-width: 540px) {
+  .nose {
+    display: none; } }
 
 .body {
   margin: 0;
@@ -152,17 +162,15 @@
   width: 100%;
   background-color: #ebebeb;
   font-family: 'Bebas Neue'; }
+  .body__buyCard {
+    display: flex;
+    flex-direction: row;
+    padding: none;
+    margin: none;
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb; }
   .body__main {
     display: flex;
     flex-direction: row;
     background-color: #ebebeb; }
-  .body__buyCard {
-    padding: none;
-    margin: none;
-    width: 100%;
-    height: 632px;
-    display: flex;
-    flex-direction: row;
-    background-color: #ebebeb;
-    animation: bounce;
-    animation-duration: 2s; }

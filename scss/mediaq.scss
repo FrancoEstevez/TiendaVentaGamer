@@ -1,34 +1,34 @@
 @media only screen and (min-width:850px){
-    .nombre{
-        font-size: 20px;
-    }
     .foto{
         height: 120px;
     }
     .mainButton {
-        height: 300px;
-    }
+        height: 40%}
 }
 
     @media only screen and (max-width:850px){
         .mainButton {
             width: 40%;
-            height: 250px;
+            height: 60%;
         }
         .header {
             display: grid;
             grid-template-columns: 4fr 3fr 2fr;
         }
+        .body main {
+            flex-direction: column;
+
+        }
+        .body__buyCard {
+            align-items: center;
+        }
     }
 
 
     @media only screen and (max-width:400px){
-        .nombre{
-            font-size: 14px;
-        }
         .mainButton {
             width: 100%;
-            height: 230px;
+            height: 50%;
         }
         .header {
             display: grid;
@@ -41,12 +41,19 @@
             display: flex;
             flex-direction: column;
         }
-        .nav__item {
-            font-size: 13px;
-        }
     }
     @media only screen and (max-width:540px){
         .indexCards {
-            flex-direction: column;}
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav {
+            display: none;
+        }
+    }
+    @media only screen and (min-width:540px){
+        .nose {
+            display: none;
+        }
     }
 

@@ -2,8 +2,9 @@
 
 .nav{
     background-color: $navBarGrey;
+    align-items: center;
     &__item{
-        font-size: 17px;
+        font-size: 1.1em;
         font-family: 'Bebas Neue';
         list-style: lower-alpha;
         list-style-type: none;

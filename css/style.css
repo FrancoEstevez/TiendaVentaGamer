@@ -95,6 +95,7 @@
     margin-left: 2%; }
 
 .indexCards {
+  margin-top: 2%;
   display: flex;
   justify-content: space-around;
   flex-direction: row; }
@@ -117,6 +118,9 @@ footer {
 @media only screen and (min-width: 850px) {
   .foto {
     height: 120px; }
+  .picture {
+    height: 400px;
+    object-fit: cover; }
   .mainButton {
     height: 40%; } }
 
@@ -126,19 +130,19 @@ footer {
     height: 60%; }
   .header {
     display: grid;
-    grid-template-columns: 4fr 3fr 2fr; }
+    grid-template-columns: 3fr 4fr 2fr; }
   .body main {
     flex-direction: column; }
   .body__buyCard {
-    align-items: center; } }
+    align-items: center; }
+  .picture {
+    height: 200px;
+    object-fit: cover; } }
 
 @media only screen and (max-width: 400px) {
-  .mainButton {
-    width: 100%;
-    height: 50%; }
   .header {
     display: grid;
-    grid-template-columns: 4fr 3fr 2fr; }
+    grid-template-columns: 3fr 4fr 2fr; }
   .searchBox {
     width: 40%; }
   .indexCards {
@@ -150,10 +154,13 @@ footer {
     flex-direction: column;
     align-items: center; }
   .nav {
-    display: none; } }
+    display: none; }
+  .mainButton {
+    width: 60%;
+    height: 40%; } }
 
 @media only screen and (min-width: 540px) {
-  .nose {
+  .navBarChange {
     display: none; } }
 
 .body {

@@ -1,6 +1,22 @@
 .indexCards {
-    margin-top: 2%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
+
+.card{
+    margin-top: 5%;
+}
+
+.downCard{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 90%;
+    background-color: white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px gray;
+    transition: all 0.5s;
+  }
